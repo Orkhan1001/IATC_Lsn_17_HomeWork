@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #091921;
+}
+
+/* CALCULATOR */
+.t_calculator{
+    position: relative;
+    display: grid;
+}
+
+/* CALCULATOR  SCREEN*/
+.t_calculator .t_value{
+    height: 100px;
+    padding: 10px;
+    grid-column: span 4;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 18px;
+}
+
+/* CALCULATOR BUTTONS */
+.t_calculator span{
+    background-color: #0c2835;
+    color: #fff;
+    height: 65px;
+    width: 65px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.t_calculator span:active{
+    background-color: #74ff3b;
+    color: #111;
+}
+/* CLEAR BUTTON */
+.t_calculator span.t_clear{
+    background-color: #ff3077;
+    grid-column: span 2;
+    width: 130px;
+}
+/* PLUS BUTTON */
+.t_calculator span.t_plus{
+    grid-row: span 2;
+    height: 130px;
+}
+/* EQUAL BUTTON */
+.t_calculator span.t_equal{
+    background-color: #03b1ff;
+}
